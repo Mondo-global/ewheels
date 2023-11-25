@@ -1,0 +1,47 @@
+html,body{height:100%;}
+
+.container.header{
+    position:relative;
+}
+
+header{
+    position:absolute;
+    top:20px;
+    border-radius:2em;
+    max-width:min-content;
+    
+    padding:0 1em;
+    background-color: rgba(8,51,76,0.7);
+}
+
+.bg-light{
+    opacity:0.5;
+}
+
+.hero-banner {
+    background: url('/imgs/hero.png') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    background-position-y: 72%;
+    min-height:600px;
+}
+.navbar-brand{display:none;}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: lightsteelblue;
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: .7rem;
+	padding-left: .7rem;
+}
+}
