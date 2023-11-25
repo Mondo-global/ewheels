@@ -19,7 +19,7 @@ header{
 }
 
 .hero-banner {
-    background: url('/imgs/hero.png') no-repeat center center;
+    background: url('../imgs/hero.png') no-repeat center center;
     background-size: cover;
     padding: 60px 0;
     background-position-y: 72%;
