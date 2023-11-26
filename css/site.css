@@ -8,8 +8,7 @@ header{
     position:absolute;
     top:20px;
     border-radius:2em;
-    max-width:min-content;
-    
+    width:fit-content;
     padding:0 1em;
     background-color: rgba(8,51,76,0.7);
 }
@@ -23,9 +22,12 @@ header{
     background-size: cover;
     padding: 60px 0;
     background-position-y: 72%;
-    min-height:600px;
+    min-height:560px;
 }
 .navbar-brand{display:none;}
+.navbar-light button.navbar-toggler{
+    border-color:transparent;
+    }
 .navbar-light .navbar-nav .nav-link{
     color: #fff;
 }
@@ -39,9 +41,32 @@ footer {
     bottom: 0;
     width: 100%;
 }
-@media (min-width: 992px) {
-.navbar-expand-lg .navbar-nav .nav-link {
-	padding-right: .7rem;
-	padding-left: .7rem;
+
+@media (min-width: 768px){
+    
 }
+
+@media (max-width: 992px) {
+.hero-banner {
+    min-height:400px;
+}
+header{
+padding:0;
+border-radius:0.4rem;
+}
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (min-width: 576px){
+
 }
